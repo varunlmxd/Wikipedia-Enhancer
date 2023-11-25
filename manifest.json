@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Wikipedia Enhancer",
+    "version": "1.0",
+    "description": "Enhancing wikipedia user experience",
+    "permissions": ["storage", "activeTab"],
+    "browser_action": {
+      "default_title": "Change Background Color",
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://en.wikipedia.org/*","https://www.wikipedia.org/*","https://www.wikipedia.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
